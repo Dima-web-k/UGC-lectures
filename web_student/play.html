@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Video</title>
+        <script src="eel.js"></script>
+    </head>
+
+    <body class="bg">
+        <h1 class="titlle">Hi</h1>
+        <video class="vid" controls width=560"> 
+            <source src="sample.mp4" type="video/mp4" id="srcc" />
+        </video>       
+        <script>
+
+            eel.expose(name);
+            function name(pat,name){
+                h1 = document.getElementById('titlle');
+                source = document.getElementById('srcc');
+                source.setAttribute('src',pat+name)
+                h1.createTextNode(name);
+            }
+            
+        </script>
+    </body>
+
+</html>
